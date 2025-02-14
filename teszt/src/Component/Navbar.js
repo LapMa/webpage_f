@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../Styles/main.css"
+import LoginRegist from "./LoginRegist";
 
 function Navbar() {
     const navref = useRef();
@@ -17,7 +18,7 @@ function Navbar() {
                 <a href="/#">Home</a>
                 <a href="/#">ScoreBoard</a>
                 <a href="/#">Blog</a>
-                <a href="/#">About Me</a>
+                <a href="/#">Bejelentkezés/Regisztráció</a>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar} >
                     <FaTimes />
                 </button>
