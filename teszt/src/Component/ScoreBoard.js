@@ -3,16 +3,16 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "../Styles/main.css"
 import { Link } from "react-router-dom";
 
+function ScoreBoard() {
 
-
-function Navbar() {
     const navref = useRef();
 
     const showNavbar = () => {
-        navref.current.classlist.toggle("responsive_nav")
+        navref.current.classlist.toggle("responsive_nav");
     }
     return (
-        <header>
+       <body>
+         <header>
             <h3>
                 Logo
             </h3>
@@ -29,7 +29,24 @@ function Navbar() {
                 <FaBars />
             </button>
         </header>
+        <div>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Point</th>
+                    <th>Best Time</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Peti</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       </body>
+        
     );
 }
 
-export default Navbar;
+export default ScoreBoard;
